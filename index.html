@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lumiere Privé - IPTV Premium con +3,000 canales en vivo, +24,000 películas y series completas. Streaming sin restricciones, sin contratos.">
+    <meta name="keywords" content="IPTV, streaming, películas, series, canales, televisión online, entretenimiento">
+    <meta name="author" content="Lumiere Privé">
+    <meta property="og:title" content="Lumiere Privé - IPTV Premium Sin Restricciones">
+    <meta property="og:description" content="Todo el entretenimiento del planeta. +3,000 canales en vivo, +24,000 películas y series. Sin restricciones. Sin contratos.">
+    <meta property="og:type" content="website">
+    <title>Lumiere Privé - IPTV Premium (V2)</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #0a0a0c;
+            color: #ffffff;
+            font-size: 11pt;
+            line-height: 1.5;
+        }
+        .page-container {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm 15mm;
+            background: linear-gradient(135deg, #0a0a0c 0%, #121216 100%);
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .logo {
+            font-size: 22pt;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #d4af37;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .tagline {
+            font-size: 10pt;
+            color: #8a8a93;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .hero {
+            text-align: center;
+            padding: 25px 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .hero h1 {
+            font-size: 20pt;
+            color: #ffffff;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 11pt;
+            color: #b3b3ba;
+            max-width: 90%;
+            margin: 0 auto 20px auto;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #d4af37 0%, #aa841b 100%);
+            color: #000000;
+            font-weight: bold;
+            padding: 10px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 10pt;
+            letter-spacing: 1px;
+        }
+        .section-title {
+            font-size: 13pt;
+            color: #d4af37;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 3px solid #d4af37;
+            padding-left: 8px;
+        }
+        .features-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .features-table th, .features-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .features-table th {
+            background-color: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            font-size: 10pt;
+            text-transform: uppercase;
+        }
+        .features-table td strong {
+            color: #ffffff;
+            font-size: 11pt;
+        }
+        .features-table td p {
+            color: #b3b3ba;
+            font-size: 9.5pt;
+            margin-top: 3px;
+        }
+        .vault-box {
+            background: linear-gradient(135deg, rgba(20, 10, 10, 0.6) 0%, rgba(40, 15, 15, 0.6) 100%);
+            border: 1px solid rgba(255, 77, 77, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .vault-box h3 {
+            color: #ff4d4d;
+            font-size: 13pt;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .vault-box p {
+            color: #d1cbd1;
+            margin-bottom: 12px;
+            font-size: 10.5pt;
+        }
+        .vault-box ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        .vault-box li {
+            margin-bottom: 6px;
+            color: #b3b3ba;
+            font-size: 10pt;
+            position: relative;
+            padding-left: 15px;
+        }
+        .vault-box li::before {
+            content: "✓";
+            color: #ff4d4d;
+            position: absolute;
+            left: 0;
+        }
+        .grid-benefits {
+            margin-bottom: 30px;
+        }
+        .benefit-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        .benefit-item h4 {
+            color: #ffffff;
+            font-size: 11pt;
+            margin-bottom: 4px;
+        }
+        .benefit-item p {
+            color: #8a8a93;
+            font-size: 9.5pt;
+        }
+        .pricing {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(212, 175, 55, 0.03);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px dashed rgba(212, 175, 55, 0.3);
+        }
+        .pricing h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 12pt;
+            text-transform: uppercase;
+        }
+        .plans-list {
+            display: table;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .plan-card {
+            display: table-cell;
+            width: 33.33%;
+            padding: 10px;
+            text-align: center;
+        }
+        .plan-inner {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 10px;
+            border-radius: 6px;
+        }
+        .plan-inner.popular {
+            border-color: #d4af37;
+            background: rgba(212, 175, 55, 0.05);
+        }
+        .plan-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        .plan-desc {
+            font-size: 8.5pt;
+            color: #8a8a93;
+        }
+        .contact-section {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .contact-section h3 {
+            color: #d4af37;
+            font-size: 12pt;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .contact-links {
+            margin-top: 10px;
+        }
+        .contact-links a {
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 11pt;
+            border-bottom: 1px dashed #d4af37;
+            padding-bottom: 2px;
+        }
+        .footer-cta {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .footer-cta p {
+            font-size: 10pt;
+            color: #b3b3ba;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="header">
+            <div class="logo">Lumiere Privé</div>
+            <div class="tagline">El Club de Entretenimiento Digital Absoluto</div>
+        </div>
+
+        <div class="hero">
+            <h1>Todo el entretenimiento del planeta.<br>Sin restricciones. Sin contratos.</h1>
+            <p>Accede a la parrilla de televisión global más estable, la cartelera de cine en streaming más grande del mundo y contenido exclusivo con la máxima seguridad.</p>
+            <a href="#" class="cta-btn">Solicitar Acceso Premium (Demo Gratis)</a>
+        </div>
+
+        <div class="section-title">El Poder de los Números</div>
+        <table class="features-table">
+            <thead>
+                <tr>
+                    <th style="width: 35%;">Contenido</th>
+                    <th style="width: 65%;">Experiencia de Usuario Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>+3,000 Canales en Vivo</strong></td>
+                    <td><p>Televisión Global Sin Fronteras: Eventos deportivos en Full HD/4K, canales internacionales y transmisiones en vivo sin retrasos. Tu pase VIP a la televisión mundial.</p></td>
+                </tr>
+                <tr>
+                    <td><strong>+24,000 Películas y Estrenos</strong></td>
+                    <td><p>Tu Propio Cine en Casa: Desde los clásicos eternos hasta los estrenos que acaban de salir de cartelera. Actualizado semanalmente con la mejor fidelidad de audio y video.</p></td>
+                </tr>
+                <tr>
+                    <td><strong>Series Completas</strong></td>
+                    <td><p>Maratones Infinitas: Temporadas completas y lanzamientos simultáneos de las plataformas de streaming más populares reunidas en una sola interfaz.</p></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="vault-box">
+            <h3>🔒 Bóveda Privada: Contenido Adulto Bajo Llave</h3>
+            <p>Sabemos que la privacidad es lo primero. Nuestro exclusivo catálogo para adultos no está a la vista de cualquiera. Cuenta con un robusto <strong>Sistema de Blindaje por PIN Personalizado</strong>.</p>
+            <ul>
+                <li><strong>Control Total:</strong> Tú decides quién tiene acceso visual y cuándo activarlo.</li>
+                <li><strong>Discreción Absoluta:</strong> Completamente invisible para menores de edad o visitas en el hogar.</li>
+                <li><strong>Acceso de Regalo:</strong> Sin cargos adicionales ocultos, configurable de manera 100% personalizada.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Ventajas de Nivel Superior</div>
+        <div class="grid-benefits">
+            <div class="benefit-item">
+                <h4>⚡ Conexión Ultra-Fluida (Tecnología Anti-Freeze)</h4>
+                <p>Servidores dedicados de última generación optimizados para evitar el almacenamiento en caché. Adiós a las pantallas congeladas en el momento más importante.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>📱 Compatibilidad Absoluta y Multipantalla</h4>
+                <p>Disfruta de la experiencia en tu Smart TV, Android, iOS, PC, Firestick o TV Box. Tu cuenta y tus preferencias te acompañan a donde vayas.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>🛠 Soporte Élite Dedicado 24/7</h4>
+                <p>Atención inmediata por agentes humanos reales. Te guiamos paso a paso para configurar tu pantalla en menos de 5 minutos.</p>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h3>Pases de Acceso Exclusivo</h3>
+            <div class="plans-list">
+                <div class="plan-card">
+                    <div class="plan-inner">
+                        <div class="plan-title">Pase 1 Mes</div>
+                        <div class="plan-desc">Para validar el poder y la estabilidad absoluta.</div>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-inner popular" style="border: 1px solid #d4af37;">
+                        <div class="plan-title" style="color: #d4af37;">Pase 3 Meses</div>
+                        <div class="plan-desc" style="color: #ffffff;">El más solicitado. Entretenimiento garantizado.</div>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-inner">
+                        <div class="plan-title">Pase 12 Meses</div>
+                        <div class="plan-desc">El rey del ahorro. Acceso VIP total todo el año.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h3>📞 Atención Inmediata y Soporte Directo</h3>
+            <p>¿Tienes preguntas o deseas activar una demo? Escríbenos directamente:</p>
+            <div class="contact-links">
+                <a href="https://wa.me/50588200263" target="_blank">Soporte 1: +505 8820 0263</a>
+                <a href="https://wa.me/50672202912" target="_blank">Soporte 2: +506 7220 2912</a>
+            </div>
+        </div>
+
+        <div class="footer-cta">
+            <p>"Prueba el servicio hoy. Si en las primeras 24 horas sientes que la estabilidad no es lo que esperabas, te devolvemos tu dinero inmediatamente. Sin preguntas."</p>
+            <a href="#" class="cta-btn">Activar Mi Cuenta Premium Ahora</a>
+        </div>
+    </div>
+</body>
+</html>
